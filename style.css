@@ -48,11 +48,46 @@ main {
   margin-block: 16px;
 }
 
-.socials {
+.content {
+  max-width: 1440px;
+  margin-inline: auto;
+  margin-top: 16px;
+}
+
+.content > img {
+  margin-inline: 32px;
+}
+
+article {
+  display: grid;
+  margin-inline: 32px;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+      "i i i c";
+  column-gap: 48px;
+}
+
+article > .content-img-ctn {
+  grid-area: i;
+}
+
+article > .content-details-ctn {
+  grid-area: c;
+  margin-block: auto;
+}
+
+.socials-ctn {
   margin-top: auto;
+  margin-inline: auto;
   display: flex;
+  max-width: 1440px;
+  width: 100%;
   justify-content: right;
-  margin-inline: 64px;
+}
+
+.socials {
+  display: flex;
+  margin-inline: 32px;
   gap: 16px;
 }
 
