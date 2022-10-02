@@ -1,6 +1,18 @@
+@font-face {
+  font-family: Poppins;
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
 :root {
   --primary-clr: hsl(257, 40%, 49%);
   --active: hsl(300, 69%, 71%);
+  --font-header: 'Poppins';
+  --font-body: 'Open Sans';
 }
 
 *, *::after, *::before {
@@ -11,6 +23,7 @@
 
 body {
   background: var(--primary-clr);
+  font-family: var(--font-body);
 }
 
 main {
@@ -38,6 +51,8 @@ footer {
   padding: 8px;
   font-weight: bold;
   color: white;
+  font-family: var(--font-header);
+  text-transform: uppercase;
 }
 
 footer:hover > .attribution {
