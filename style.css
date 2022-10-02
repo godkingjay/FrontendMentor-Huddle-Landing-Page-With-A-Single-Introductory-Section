@@ -1,7 +1,16 @@
+:root {
+  --primary-clr: hsl(257, 40%, 49%);
+  --active: hsl(300, 69%, 71%);
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: var(--primary-clr);
 }
 
 main {
@@ -15,13 +24,26 @@ main {
 
 footer {
   margin-top:  auto;
+  position: relative;
+  overflow: hidden;
+  filter: drop-shadow(0 8px 8px #000);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  translate: 0 100%;
+  transition: all 0.2s ease-in-out;
+  background: var(--primary-clr);
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+footer:hover > .attribution {
+  translate: 0 0;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #0080f0;
 }
