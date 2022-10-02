@@ -33,13 +33,21 @@ main {
   min-height: 100vh;
   max-width: 1920px;
   margin-inline:  auto;
+  background-image: url('images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
   margin-top:  auto;
   position: relative;
   overflow: hidden;
-  filter: drop-shadow(0 8px 8px #000);
+  filter: drop-shadow(0 8px 8px #0004);
+}
+
+.wrapper {
+  flex: 1;
 }
 
 .attribution {
@@ -53,6 +61,7 @@ footer {
   color: white;
   font-family: var(--font-header);
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 footer:hover > .attribution {
