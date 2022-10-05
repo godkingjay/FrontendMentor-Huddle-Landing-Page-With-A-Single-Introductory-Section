@@ -43,7 +43,7 @@ main {
   position: relative;
   min-height: 100vh;
   max-width: 1920px;
-  margin-inline:  auto;
+  margin-inline: auto;
   background-image: url('images/bg-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +67,7 @@ main {
   flex-direction: column;
 }
 
-.content > img {
+.content>img {
   margin-inline: 32px;
   max-height: 100%;
   margin-right: auto;
@@ -85,7 +85,7 @@ article {
   grid-area: i;
 }
 
-.content-img-ctn > img {
+.content-img-ctn>img {
   width: 100%;
 }
 
@@ -97,15 +97,15 @@ article {
   gap: 24px;
 }
 
-.content-details-ctn > h1 {
+.content-details-ctn>h1 {
   font-size: 48px;
 }
 
-.content-details-ctn > p {
+.content-details-ctn>p {
   text-align: justify;
 }
 
-.content-details-ctn > a {
+.content-details-ctn>a {
   color: var(--primary-clr);
   text-decoration: none;
   font-size: 20px;
@@ -120,7 +120,7 @@ article {
   justify-content: center;
 }
 
-.content-details-ctn > a:hover {
+.content-details-ctn>a:hover {
   color: var(--btn-clr);
   background: var(--active);
 }
@@ -141,7 +141,7 @@ article {
   gap: 16px;
 }
 
-.socials > a {
+.socials>a {
   border: 1px var(--socials-clr) solid;
   height: 40px;
   aspect-ratio: 1;
@@ -152,20 +152,21 @@ article {
   text-decoration: none;
   color: var(--socials-clr);
   transition: all 0.2s ease-in-out;
+  font-size: 0;
 }
 
-.socials > a:hover {
+.socials>a:hover {
   border-color: var(--active);
   color: var(--active);
   transform: scale(1.1);
 }
 
-.socials > a > i {
+.socials>a>i {
   font-size: 20px;
 }
 
 footer {
-  margin-top:  auto;
+  margin-top: auto;
   position: relative;
   overflow: hidden;
   filter: drop-shadow(0 8px 8px #0004);
@@ -185,7 +186,7 @@ footer {
   font-size: 12px;
 }
 
-footer:hover > .attribution {
+footer:hover>.attribution {
   transform: translate(0, 0);
 }
 
@@ -203,18 +204,18 @@ footer:hover > .attribution {
 }
 
 @media (max-width: 1152px) {
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 40px;
   }
 }
 
 @media (max-width: 1024px) {
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 36px;
     line-height: 110%;
   }
 
-  .content-details-ctn > a {
+  .content-details-ctn>a {
     font-size: 20px;
   }
 }
@@ -224,12 +225,12 @@ footer:hover > .attribution {
     gap: 24px;
   }
 
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 32px;
     line-height: 120%;
   }
 
-  .content-details-ctn > a {
+  .content-details-ctn>a {
     padding-block: 12px;
   }
 }
@@ -243,7 +244,7 @@ footer:hover > .attribution {
     max-width: 512px;
     margin-inline: auto;
   }
-  
+
   article {
     grid-template-areas:
       "i"
@@ -251,15 +252,15 @@ footer:hover > .attribution {
     row-gap: 48px;
   }
 
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     text-align: center;
   }
 
-  .content-details-ctn > p {
+  .content-details-ctn>p {
     text-align: center;
   }
 
-  .content-details-ctn > a {
+  .content-details-ctn>a {
     margin-inline: auto;
     min-width: 192px;
   }
@@ -270,7 +271,7 @@ footer:hover > .attribution {
 }
 
 @media (max-width: 576px) {
-  .content > img {
+  .content>img {
     max-height: 48px;
   }
 
@@ -280,7 +281,7 @@ footer:hover > .attribution {
 }
 
 @media (max-width: 384px) {
-  .content > img {
+  .content>img {
     max-height: 32px;
   }
 
@@ -288,18 +289,18 @@ footer:hover > .attribution {
     margin-top: 32px;
   }
 
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 24px;
   }
 
-  .content-details-ctn > a {
+  .content-details-ctn>a {
     font-size: 16px;
     min-width: 160px;
   }
 }
 
 @media (max-width: 256px) {
-  .content > img {
+  .content>img {
     max-height: 24px;
   }
 
@@ -307,44 +308,44 @@ footer:hover > .attribution {
     row-gap: 32px;
   }
 
-  .content-details-ctn > h1,
-  .content-details-ctn > p,
-  .content-details-ctn > a {
+  .content-details-ctn>h1,
+  .content-details-ctn>p,
+  .content-details-ctn>a {
     min-width: 100%;
     width: 0;
   }
 
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 16px;
   }
 
-  .content-details-ctn > p,
-  .content-details-ctn > a {
+  .content-details-ctn>p,
+  .content-details-ctn>a {
     font-size: 12px;
   }
 
-  .content-details-ctn > a {
+  .content-details-ctn>a {
     padding-block: 8px;
   }
 
-  .socials > a {
+  .socials>a {
     height: 32px;
   }
 
-  .socials > a > i {
+  .socials>a>i {
     font-size: 12px;
   }
 }
 
 @media (max-width: 160px) {
-  .content > img {
+  .content>img {
     padding-inline: 10%;
     min-width: 100%;
     width: 0;
     margin: 0;
   }
 
-  .content-details-ctn > h1 {
+  .content-details-ctn>h1 {
     font-size: 12px;
   }
 
