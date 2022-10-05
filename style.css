@@ -18,7 +18,9 @@
   --text-clr: white;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,7 +31,8 @@ body {
   font-family: var(--font-body);
 }
 
-h1, p {
+h1,
+p {
   color: var(--text-clr);
 }
 
@@ -240,7 +243,8 @@ footer:hover>.attribution {
     margin-block: 64px;
   }
 
-  .wrapper, .content {
+  .wrapper,
+  .content {
     max-width: 512px;
     margin-inline: auto;
   }
