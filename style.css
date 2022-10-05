@@ -1,6 +1,6 @@
 @font-face {
   font-family: Poppins;
-  src: url('./fonts/Poppins-Regular.ttf');
+  src: url('./fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
@@ -93,13 +93,11 @@ article {
   margin-block: auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .content-details-ctn > h1 {
   font-size: 48px;
-  line-height: 120%;
-  font-weight: 900;
 }
 
 .content-details-ctn > p {
@@ -112,12 +110,13 @@ article {
   font-size: 20px;
   background: var(--btn-clr);
   display: flex;
-  width: max-content;
+  max-width: 192px;
   padding-block: 16px;
-  padding-inline: 64px;
   border-radius: 100vh;
   box-shadow: 0 4px 8px 8px #0002;
   transition: color 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-details-ctn > a:hover {
