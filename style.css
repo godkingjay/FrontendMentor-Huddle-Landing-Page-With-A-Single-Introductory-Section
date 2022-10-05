@@ -51,11 +51,16 @@ main {
 .content {
   max-width: 1440px;
   margin-inline: auto;
-  margin-top: 16px;
+  margin-top: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .content > img {
   margin-inline: 32px;
+  max-height: 100%;
+  margin-right: auto;
 }
 
 article {
@@ -65,6 +70,8 @@ article {
   grid-template-areas:
       "i i i c";
   column-gap: 48px;
+  flex: 1;
+  margin-block: 48px;
 }
 
 article > .content-img-ctn {
@@ -141,4 +148,8 @@ footer:hover > .attribution {
 
 .attribution a {
   color: #0080f0;
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+  
 }
