@@ -239,6 +239,10 @@ footer:hover>.attribution {
 }
 
 @media (max-width: 768px) {
+  main {
+    background-image: url('images/bg-mobile.svg');
+  }
+
   .wrapper {
     margin-block: 64px;
   }
